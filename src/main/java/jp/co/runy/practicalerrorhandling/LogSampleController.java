@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/")
 public class LogSampleController {
+	
+	// ロガーを取得する。（引数にはこのロガーを使用するクラスのClassオブジェクトを渡す）
 	private static final Logger logger = LoggerFactory.getLogger(LogSampleController.class);
 	/**
 	 * ロガーに含まれる各ログレベルのメソッドを呼ぶ.
@@ -43,5 +45,14 @@ public class LogSampleController {
 	@RequestMapping("/exception")
 	public String throwsException() {
 		throw new RuntimeException("例外が発生しました！");
+	}
+	
+	/**
+	 * ログイン画面に移動する.<br>
+	 * @throws ログイン画面
+	 */
+	@RequestMapping("/toLogin")
+	public String toLogin() {
+		return "login";
 	}
 }

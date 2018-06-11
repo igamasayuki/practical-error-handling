@@ -12,5 +12,5 @@
 
 </pre>
 
-<a href="${pageContext.request.contextPath}/XXX" class="navbar-link">ログイン画面</a>
+<a href="${pageContext.request.contextPath}/toLogin" class="navbar-link">ログイン画面</a>
 

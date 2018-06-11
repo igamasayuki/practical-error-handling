@@ -14,14 +14,16 @@
 		<smtpPort>465</smtpPort>
 		<SSL>true</SSL>
 		<username>xxxx@gmail.com</username>
-		<password>password</password>
+		<password>xxxx</password>
 
-		<to>xxx@gmail.com</to>
-		<from>xxx@gmail.com</from>
+		<to>xxxx@gmail.com</to>
+		<from>xxxx@gmail.com</from>
 		<subject>Logback SMTPAppender Sample</subject>
 
 		<layout class="ch.qos.logback.classic.PatternLayout">
-			<pattern>[%-5level][%d{yyyy-MM-dd HH:mm:ss.SSS}] %class - %msg%n</pattern>
+			<!-- patternタグの書き方は以下の公式サイトを参照する -->
+			<!-- https://logback.qos.ch/manual/layouts_ja.html -->
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] %logger{26} - %msg%n</pattern>
 		</layout>
 	</appender>
 
