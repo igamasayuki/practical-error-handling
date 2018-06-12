@@ -18,8 +18,8 @@ public class CommonController {
 	 * 
 	 * @return 遷移先画面
 	 */
-	@RequestMapping("/error")
-	public String error() {
+	@RequestMapping("/maintenance")
+	public String maintenance() {
 		return "common/error";
 	}
 }
