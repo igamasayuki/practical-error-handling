@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LogSampleController {
 	
 	// ロガーを取得する。（引数にはこのロガーを使用するクラスのClassオブジェクトを渡す）
-	private static final Logger logger = LoggerFactory.getLogger(LogSampleController.class);
+	private static final Logger logger 
+		= LoggerFactory.getLogger(LogSampleController.class);
+	
 	/**
 	 * ロガーに含まれる各ログレベルのメソッドを呼ぶ.
 	 * <pre>
